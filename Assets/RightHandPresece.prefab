@@ -1,0 +1,69 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6034879864845460078
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6034879864845460076}
+  - component: {fileID: 6034879864845460079}
+  m_Layer: 0
+  m_Name: RightHandPresece
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6034879864845460076
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6034879864845460078}
+  m_LocalRotation: {x: 0, y: 0.9848078, z: -0.17364816, w: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 20, y: 180, z: 0}
+--- !u!114 &6034879864845460079
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6034879864845460078}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1a11fc426a118148931faf88c58832a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  controllerCharacteristics: 576
+  controllerPrefabs:
+  - {fileID: 919132149155446097, guid: b80f385ad95ca9d47987747cf6d13eee, type: 3}
+  - {fileID: 919132149155446097, guid: 3cc11666e579b2c469b2a682055de675, type: 3}
+  - {fileID: 919132149155446097, guid: fb7d07a01473aa7468f8226d8a052a45, type: 3}
+  - {fileID: 919132149155446097, guid: 658b4896b14b93349b957eeecad67c75, type: 3}
+  - {fileID: 919132149155446097, guid: a67dc72d17bbb054bb342f6305fca0f8, type: 3}
+  - {fileID: 919132149155446097, guid: 76728eab7da774846b1425d747614c2d, type: 3}
+  - {fileID: 919132149155446097, guid: e0514735d7c4cf6408b062846a41bcab, type: 3}
+  - {fileID: 919132149155446097, guid: a653eaa6eecf42040bdf58733e5c8564, type: 3}
+  - {fileID: 919132149155446097, guid: c1f7c6f39a8caa74d880a5b6cc117ef0, type: 3}
+  - {fileID: 919132149155446097, guid: 9a880defeba0fd54fb527c9626bef2b3, type: 3}
+  - {fileID: 919132149155446097, guid: f224eba85f8fd3b4d8535b2b8d6692a5, type: 3}
+  - {fileID: 919132149155446097, guid: 27a4e0af15035ef46ab4f8f70afd4ae9, type: 3}
+  - {fileID: 919132149155446097, guid: 16a6b02aa2d1cd64ebf981104f5eac1e, type: 3}
+  - {fileID: 919132149155446097, guid: 036b3bba8ff0e9844be29fdb245ff243, type: 3}
+  - {fileID: 919132149155446097, guid: 103a3791d9485fa4eb7bba892e338e21, type: 3}
+  - {fileID: 919132149155446097, guid: 74ea7a2755e280545974c05d98ba2352, type: 3}
+  - {fileID: 919132149155446097, guid: 65277fe6c5364754680225af35bd847d, type: 3}
+  - {fileID: 919132149155446097, guid: 45d92fc35d94380419d4dca0a4502bb6, type: 3}
+  - {fileID: 919132149155446097, guid: 8212efc63d9840c43b86aaf94208af4d, type: 3}
+  - {fileID: 919132149155446097, guid: 459612b8447c91e4a92a7ad845f14db0, type: 3}
+  spawnedController: {fileID: 0}
+  i: 0
