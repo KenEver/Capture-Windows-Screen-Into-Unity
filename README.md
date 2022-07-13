@@ -7,8 +7,8 @@
 ![image](https://github.com/KenEver/Screan-Reader-From-Windows-Application-To-VR-Environment/blob/main/Screenshot.jpg)
 
 # Feature
-- The displayed screen of the player's monitor would direct cast to the raw image UI in the game. The main program for controlling the raw image is`Assets/recorder.cs`. 
-- As the project is originally for VR environments, it supports VR control by XR Rig Plugin.
+- The displayed screen of the player's monitor would be casted to the raw image object in the game. The main program for controlling the raw image is`Assets/recorder.cs`. 
+- As the project is for VR environments, it originally supports VR control by XR Rig Plugin.
 
 # Scenes Control(For keyboard and Mouse)
 - Control movement by `W`,`A`,`S`,`D` keyDown.
