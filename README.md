@@ -10,7 +10,7 @@
 - The displayed screen of the player's monitor would be casted to the raw image object in the game. The main program for controlling the raw image is`Assets/recorder.cs`. 
 - As the project is for VR environments, it originally supports VR control by XR Rig Plugin.
 
-# Scenes Control(For keyboard and Mouse)
+# Player Control(For keyboard and Mouse)
 - Control movement by `W`,`A`,`S`,`D` keyDown.
 - Rotate the camera by mouse.
 
