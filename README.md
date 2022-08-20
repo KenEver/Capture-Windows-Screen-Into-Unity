@@ -4,7 +4,7 @@
 
 *It only supports Windows(including Windows 11) because the application would call  the functions provided by `system32.dll`.
 
-![image](https://github.com/KenEver/Screen-Reader-From-Windows-Application-To-VR-Environment/blob/main/Screenshot.jpg)
+![image](https://github.com/KenEver/Unity-Screen-Reader-From-Windows-Application-To-VR-Environment/blob/main/Screenshot.jpg)
 
 # Feature
 - The displayed screen of the player's monitor would be casted to the raw image object in the game. The main program for controlling the raw image is`Assets/recorder.cs`. 
