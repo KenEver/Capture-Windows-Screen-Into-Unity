@@ -16,7 +16,7 @@ public class recorder : MonoBehaviour
 {
     public float timeRemaining = 1;
     Texture2D t;
-    int fps=0;
+    int fps=0;//store fps data
     Bitmap captureBitmap = new Bitmap(1920, 1080);
     MemoryStream msFinger = new MemoryStream();
     bool screemWaittingForLoad=false;
@@ -27,9 +27,9 @@ public class recorder : MonoBehaviour
         { 
             Rectangle captureRectangle = System.Windows.Forms.Screen.AllScreens[0].Bounds;
             System.Drawing.Graphics captureGraphics = System.Drawing.Graphics.FromImage(captureBitmap);
-            captureGraphics.CopyFromScreen(0, 0, 0, 0, captureRectangle.Size);
+            captureGraphics.CopyFromScreen(0, 0, 0, 0, captureRectangle.Size);//Windows function for copying screen
             msFinger = new MemoryStream();
-            captureBitmap.Save(msFinger, captureBitmap.RawFormat);
+            captureBitmap.Save(msFinger, captureBitmap.RawFormat);//Save from Bitmap to MemoryStream
             screemWaittingForLoad = true;
         }
 
@@ -37,8 +37,8 @@ public class recorder : MonoBehaviour
 
     void Start()
     {
-        t = new Texture2D(1920, 1080);
-
+        t = new Texture2D(1920, 1080);//Texture for display
+        //Create Thread
         UpdateScreen();
         new Thread(() =>
         {
@@ -57,25 +57,29 @@ public class recorder : MonoBehaviour
 
     void Update()
     {
+
         if (screemWaittingForLoad) {
+            //Loading MemoryStream(Bitmap) to the RawImage object
             t.LoadImage(msFinger.ToArray());
             GetComponent<RawImage>().texture = t;
             screemWaittingForLoad = false;
         }
         
-        /*if (timeRemaining > 0)
+        if (timeRemaining > 0)
         {
+            //Time counting
             timeRemaining -= Time.deltaTime;
             fps++;
         }
         else
-        {
+        {//Display fps to debug
             Debug.Log(fps);
             fps = 0;
             timeRemaining = 1;
-        }*/
+        }
     }
-
+    //The follow codes are for mouse controling to Windows system, which still developing.
+    /*
     [Flags]
     public enum MouseEventFlags
     {
@@ -142,5 +146,5 @@ public class recorder : MonoBehaviour
             X = x;
             Y = y;
         }
-    }
+    }*/
 }
