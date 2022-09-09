@@ -1,4 +1,4 @@
-# Screen-Reader-From-Windows-Application-To-VR-Environment
+# Capture-Windows-Screen-Into-Unity
  
 *This project uses unity `2020.3.35f1` while developing.
 
